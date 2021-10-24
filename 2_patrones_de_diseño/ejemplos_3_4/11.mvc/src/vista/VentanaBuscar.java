@@ -100,6 +100,75 @@ public class VentanaBuscar extends JFrame implements ActionListener {
         add(botonBuscar);
         add(botonGuardar);
         add(botonCancelar);
+        add(labelTitulo);
+
+        limpiar();
+
+        setSize(480, 320);
+        setTitle("Iplacex: Patrones de Diseño/MVC");
+        setLocationRelativeTo(null);
+        setResizable(false);
+        setLayout(null);
+    }
+
+    public void setCoordinador(Coordinador miCoordinador) {
+        this.miCoordinador = miCoordinador;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == botonGuardar) {
+            try {
+                PersonaVo miPersona = new PersonaVo();
+                miPersona.setIdPersona(Integer.parseInt(textCod.getText()));
+                miPersona.setNombrePersona(textNombre.getText());
+                miPersona.setTelefonoPersona(Integer.parseInt(textTelefono.getText()));
+                miPersona.setEdadPersona(Integer.parseInt(textEdad.getText()));
+                miPersona.setProfesionPersona(textProfesion.getText());
+                miCoordinador.modificarPersona(miPersona);
+                if (Logica.modificaPersona == true) {
+                    habilita(true, false, false, false, false, true, false, true, true);
+                }
+            } catch (Exception e2) {
+                JOptionPane.showMessageDialog(null, "Error en el Ingreso de Datos", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+
+        if (e.getSource() == botonBuscar) {
+            PersonaVo miPersona = miCoordinador.buscarPersona(textCod.getText());
+            if (miPersona != null) {
+                muestraPersona(miPersona);
+            } else if (Logica.consultaPersona == true) {
+                JOptionPane.showMessageDialog(null, "La persona no Existe", "Advertencia", JOptionPane.WARNING_MESSAGE);
+            }
+        }
+        if (e.getSource() == botonModificar) {
+            habilita(false, true, true, true, true, false, true, false, false);
+        }
+        if (e.getSource() == botonEliminar) {
+            if (!textCod.getText().equals("")) {
+                int respuesta = JOptionPane.showConfirmDialog(this, "Esta seguro de eliminar la Persona?",
+                        "Confirmacion", JOptionPane.YES_NO_OPTION);
+                if (respuesta == JOptionPane.YES_NO_OPTION) {
+                    miCoordinador.eliminarPersona(textCod.getText());
+                    limpiar();
+                }
+            } else {
+                JOptionPane.showMessageDialog(null, "Ingrese un numero de Documento", "Informacion",
+                        JOptionPane.WARNING_MESSAGE);
+            }
+        }
+        if (e.getSource() == botonCancelar) {
+            this.dispose();
+        }
+    }
+
+    public void muestraPersona(PersonaVo miPersona) {
+        textNombre.setText(miPersona.getNombrePersona());
+        textEdad.setText(miPersona.getEdadPersona() + "");
+        textTelefono.setText(miPersona.getTelefonoPersona() + "");
+        textProfesion.setText(miPersona.getProfesionPersona());
+        habilita(true, false, false, false, false, true, false, true, true);
     }
 
     public void limpiar() {

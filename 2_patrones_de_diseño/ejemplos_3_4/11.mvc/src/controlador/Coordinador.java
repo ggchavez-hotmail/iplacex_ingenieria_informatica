@@ -1,10 +1,10 @@
 package controlador;
 
 import modelo.Logica;
-import modelo.vo.PersonVo;
-import vista.VentanBuscar;
-import vista.VentanPrincipal;
-import vista.VentanRegistro;
+import modelo.vo.PersonaVo;
+import vista.VentanaBuscar;
+import vista.VentanaPrincipal;
+import vista.VentanaRegistro;
 
 public class Coordinador {
     private Logica miLogica;
@@ -49,7 +49,7 @@ public class Coordinador {
     }
 
     public void mostrarVentanaConsulta() {
-        miVentanaConsulta.setVisible(true);
+    	miVentanaBuscar.setVisible(true);
     }
 
     public void registrarPersona(PersonaVo miPersona) {

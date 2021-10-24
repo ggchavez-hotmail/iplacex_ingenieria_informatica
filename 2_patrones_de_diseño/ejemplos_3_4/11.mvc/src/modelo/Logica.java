@@ -4,12 +4,11 @@ import javax.swing.JOptionPane;
 import modelo.dao.PersonaDao;
 import modelo.vo.PersonaVo;
 import controlador.Coordinador;
-import jdk.nashorn.internal.scripts.JO;
 
 public class Logica {
     private Coordinador miCoordinador;
-    private static boolean consultaPersona = false;
-    private static boolean modificaPersona = false;
+    public static boolean consultaPersona = false;
+    public static boolean modificaPersona = false;
 
     public void setCoordinador(Coordinador miCoordinador) {
         this.miCoordinador = miCoordinador;

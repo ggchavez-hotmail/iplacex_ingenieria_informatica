@@ -6,7 +6,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 
-import jdk.nashorn.internal.scripts.JO;
 import modelo.conexion.Conexion;
 import modelo.vo.PersonaVo;
 
