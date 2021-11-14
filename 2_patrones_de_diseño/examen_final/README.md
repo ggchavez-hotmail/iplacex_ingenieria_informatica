@@ -91,4 +91,4 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 
 ## Autor ✒️
 
-* **Gustavo Chavez** - *Todas las tareas* - [ggchavez-hotmail](https://github.com/villanuevand)
+* **Gustavo Chavez** - *Todas las tareas* - [ggchavez-hotmail](https://github.com/ggchavez-hotmail/iplacex_ingenieria_informatica/tree/main/2_patrones_de_dise%C3%B1o/examen_final)
