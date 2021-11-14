@@ -1,0 +1,640 @@
+{
+    "Usuarios": [
+        {
+            "nombre": "admin",
+            "password": "admin",
+            "habilitado": "True"
+        },
+        {
+            "nombre": "pedro",
+            "password": "pedro123",
+            "habilitado": "True"
+        }
+    ],
+    "Slafi": [
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Pedro",
+            "apellido": "Perez",
+            "edad": 75,
+            "contribucion": 10000,
+            "pension": 10000,
+            "afp": "Modelo"
+        }
+    ],
+    "Sipen": [
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "pension": 100000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Roberto",
+            "apellido": "Gomez",
+            "edad": 65,
+            "pension": 150000,
+            "afp": "Habitad"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "pension": 110000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "pension": 100000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Roberto",
+            "apellido": "Gomez",
+            "edad": 65,
+            "pension": 150000,
+            "afp": "Habitad"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "pension": 110000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "pension": 100000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Roberto",
+            "apellido": "Gomez",
+            "edad": 65,
+            "pension": 150000,
+            "afp": "Habitad"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "pension": 110000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "pension": 110000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "pension": 100000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Roberto",
+            "apellido": "Gomez",
+            "edad": 65,
+            "pension": 150000,
+            "afp": "Habitad"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "pension": 110000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "pension": 100000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Roberto",
+            "apellido": "Gomez",
+            "edad": 65,
+            "pension": 150000,
+            "afp": "Habitad"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "pension": 110000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "pension": 100000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Roberto",
+            "apellido": "Gomez",
+            "edad": 65,
+            "pension": 150000,
+            "afp": "Habitad"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "pension": 110000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "pension": 110000,
+            "afp": "Modelo"
+        }
+    ],
+    "SCex": [
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "exclusion": "FFAA",
+            "pension": 100000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "exclusion": "FFAA",
+            "pension": 100000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Roberto",
+            "apellido": "Gomez",
+            "edad": 65,
+            "exclusion": "Fallecido",
+            "pension": 150000,
+            "afp": "Habitad"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "exclusion": "Empleado",
+            "pension": 110000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "exclusion": "Empleado",
+            "pension": 110000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "exclusion": "FFAA",
+            "pension": 100000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "exclusion": "FFAA",
+            "pension": 100000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Roberto",
+            "apellido": "Gomez",
+            "edad": 65,
+            "exclusion": "Fallecido",
+            "pension": 150000,
+            "afp": "Habitad"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "exclusion": "Empleado",
+            "pension": 110000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "exclusion": "Empleado",
+            "pension": 110000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "exclusion": "FFAA",
+            "pension": 100000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "exclusion": "FFAA",
+            "pension": 100000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Roberto",
+            "apellido": "Gomez",
+            "edad": 65,
+            "exclusion": "Fallecido",
+            "pension": 150000,
+            "afp": "Habitad"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "exclusion": "Empleado",
+            "pension": 110000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "exclusion": "Empleado",
+            "pension": 110000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "exclusion": "FFAA",
+            "pension": 100000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 75,
+            "exclusion": "FFAA",
+            "pension": 100000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Roberto",
+            "apellido": "Gomez",
+            "edad": 65,
+            "exclusion": "Fallecido",
+            "pension": 150000,
+            "afp": "Habitad"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "exclusion": "Empleado",
+            "pension": 110000,
+            "afp": "Modelo"
+        },
+        {
+            "nombre": "Andres",
+            "apellido": "Segovia",
+            "edad": 68,
+            "exclusion": "Empleado",
+            "pension": 110000,
+            "afp": "Modelo"
+        }
+    ]
+}
