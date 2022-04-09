@@ -1,18 +1,28 @@
 package com.iplacex.microservices.camelproducera.routes.a;
 
+import java.util.Iterator;
+import java.util.List;
+
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.jackson.JacksonDataFormat;
 import org.apache.camel.component.jackson.ListJacksonDataFormat;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.apache.camel.model.ChoiceDefinition;
+
+import com.iplacex.microservices.camelproducera.model.Parametro;
+import com.iplacex.microservices.camelproducera.model.Pedido;
+import com.iplacex.microservices.camelproducera.repository.ParametroRepo;
 
 
 @Component
 public class ActiveMQSenderRouter extends RouteBuilder{
-		
+	@Autowired
+	ParametroRepo parametroRepo;
+	
 	@Override
 	public void configure() throws Exception {
+		
 		//Se genera un timer para consultar end-point
 		//que devuelve los pedidos pendiente de realizar
 		from("timer:simple?period=1000")
@@ -20,7 +30,7 @@ public class ActiveMQSenderRouter extends RouteBuilder{
 		.to("direct:consumirWSRestGET")
 		.end();
 		
-		//Consulta de end-point
+		//Consulta end-point de pedidos existentes
 		from("direct:consumirWSRestGET")
 		.setHeader(Exchange.HTTP_METHOD,constant(org.apache.camel.component.http.HttpMethods.GET))
 		.to("http://127.0.0.1:3000/ordenes?realizado=false")
@@ -30,13 +40,20 @@ public class ActiveMQSenderRouter extends RouteBuilder{
 		.choice()
 			.when(body().isNotNull())
 				.split(body())
-					.log("Procesar conentido")
+					.log("Procesar contenido")
 					.process(exchange->{
+						//Se rescata de base de datos los parametros adicionales
 						Pedido pedido = exchange.getIn().getBody(Pedido.class);
 						if(pedido != null) {
 							System.out.println("... procesando Pedido ID "+ pedido.getId());
-						pedido.setRealizado(true);
-						exchange.getOut().setBody(pedido);
+							List<Parametro> parametros = parametroRepo.findAllByEmpresa(pedido.getEmpresa());							
+							if(parametroRepo != null) {			
+								for (Parametro parametro : parametros) {
+									pedido.setDataAdicional(parametro.getInfoAdicional());	
+								}
+							}
+							pedido.setRealizado(true);
+							exchange.getOut().setBody(pedido);
 						}
 					})
 					.to("direct:consumirWSRestPUT")
@@ -67,6 +84,9 @@ public class ActiveMQSenderRouter extends RouteBuilder{
 			.when().simple("${body.empresa} == 'puma'")
 				.marshal(new JacksonDataFormat(Pedido.class))
 				.to("activemq:activemq-empresa-puma")
+			.otherwise()
+				.marshal(new JacksonDataFormat(Pedido.class))
+				.to("activemq:DeadLetterQueue")
 		.endChoice()
 		.end();
 		 
