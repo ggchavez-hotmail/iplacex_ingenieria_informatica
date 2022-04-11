@@ -28,7 +28,7 @@ _Paso 1: Luego de instalado Node ejecutar comando:_
 npm install -g json-server
 ```
 
-_Paso 2: Navegar hasta donde se encuentra db.json:_
+_Paso 2: Navegar hasta donde se encuentra \*.json, que se convertiran en Api Rest:_
 
 ```
 cd Data
@@ -43,13 +43,7 @@ json-server --watch db-rest-empresaB.json --port 3002
 json-server --watch db-rest-empresaC.json --port 3003
 ```
 
-_Paso 4: Navegar hasta donde se encuentra db.json:_
-
-```
-cd docker-activemq-mongodb
-```
-
-_Paso 5: Configurar según IP_LOCAL, persistencia MQ:_
+_Paso 4: Configurar según IP_LOCAL, persistencia MQ:_
 
 ```
 cd Data/conf
@@ -60,7 +54,7 @@ nano db.properties
 amq.db.host=IP_LOCAL
 ```
 
-_Paso 6: Configurar según IP_LOCAL, proyecto java Consumer:_
+_Paso 5: Configurar según IP_LOCAL, proyecto java Consumer:_
 
 ```
 cd camel-consumer-a/src/main/resources
@@ -71,7 +65,7 @@ nano application.properties
 spring.activemq.broker-url=tcp://IP_LOCAL:61616
 ```
 
-_Paso 7: Configurar según IP_LOCAL, proyecto java Producer:_
+_Paso 6: Configurar según IP_LOCAL, proyecto java Producer:_
 
 ```
 cd camel-producer-a/src/main/resources
@@ -83,7 +77,7 @@ spring.activemq.broker-url=tcp://IP_LOCAL:61616
 spring.data.mongodb.host=IP_LOCAL
 ```
 
-_Paso 8: Levantar base datos mongo/postgres, activeMQ. Verificar que se encuentra libre los puertos 27017-61616-8161-5432-5050_
+_Paso 7: Levantar base datos mongo/postgres, activeMQ. Verificar que se encuentra libre los puertos 27017-61616-8161-5432-5050_
 
 ```
 docker-compose up -d
