@@ -1,155 +1,153 @@
-# Instalar y Configurar MQ
+# Evaluación 2 - Iplacex - Integración de Sistemas
 
-## Instalar JDK Oracle
+_Se realiza 2 proyectos en Springboot Java que interactuan con cola ActiveMQ(Consumer/Producer), mediante Apache Camel._
 
-### Oracle JDK 8
+_Adicionalmente desde el Producer se consume end-point Rest donde se rescatan los datos a enviar a MQ, también se consume una BD en Mongo desde donde se rescatan el resto de parametros._
 
-```
-LOGIN REQUIRED. USE WEB BROWSER TO DOWNLOAD.
-```
+_El ActiveMQ esta configurado en modo de persistencia conectado a una BD Postgres._
 
-### Oracle JDK 8
+## Comenzando 🚀
 
-```
-sudo mkdir -p /usr/lib/jvm
-sudo tar -zxvf jdk-8u221-linux-x64.tar.gz -C /usr/lib/jvm/
-```
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-### Oracle JDK 8
+### Pre-requisitos 📋
 
 ```
-sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.8.0_221/bin/java 1
+- npm/Node para levantar json-server
+- JDK 1.8 para levantar el proyecto principal en Java
+- docker/docker-compose para levantar las BDs Mongo, Postgres, el ActiveMQ
 ```
 
-### Set default Java version
+### Instalación 🔧
+
+_A continuación instalación de Json-Server_
+
+_Paso 1: Luego de instalado Node ejecutar comando:_
 
 ```
-sudo update-alternatives --config java
-sudo update-alternatives --set java /usr/lib/jvm/jdk1.8.X_version/bin/java
+npm install -g json-server
 ```
 
-### Verify Java version
+_Paso 2: Navegar hasta donde se encuentra db.json:_
 
 ```
-java -version
+cd Data
 ```
 
-### Setup Environmental Variable
+_Paso 3: Levantar servicios, verificar que se encuentra libre el puerto 3000-3001-3002-3003_
 
 ```
-sudo nano /etc/profile
-
-export PATH=$PATH:/usr/lib/jvm/jdk1.8.0_221/bin
-export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_221/
-export JRE_HOME=/usr/lib/jvm/jdk1.8.0_221/jre/
-export J2SDKDIR=/usr/lib/jvm/jdk1.8.0_221/
-export J2REDIR=/usr/lib/jvm/jdk1.8.0_221/jre/
+json-server --watch db-rest-pedidos.json --port 3000
+json-server --watch db-rest-empresaA.json --port 3001
+json-server --watch db-rest-empresaB.json --port 3002
+json-server --watch db-rest-empresaC.json --port 3003
 ```
 
-## Incluir Puerto para salida maquina virtual
-
-### Instalar UFW
+_Paso 4: Navegar hasta donde se encuentra db.json:_
 
 ```
-sudo apt install ufw
+cd docker-activemq-mongodb
 ```
 
-### Habilitar puerto de MQ
+_Paso 5: Configurar según IP_LOCAL, persistencia MQ:_
 
 ```
-sudo ufw allow 8161/tcp
-```
-
-### Habilitar UFW
-
-```
-sudo ufw enable
-```
-
-### Comprobar el estado y las reglas de UFW
-
-```
-sudo ufw status verbose
-```
-
-## Instalar Apache Active MQ
-
-### Descargar versión 5.16.4, compatible con JDK Oracle 8, la version 5.17.0 da error.
-
-```
-cd /opt
-sudo wget http://activemq.apache.org/path/tofile/apache-activemq-5.16.4-bin.tar.gz
-tar zxvf apache-activemq-5.16.4-bin.tar.gz
-cd apache-activemq-5.16.4
-```
-
-### Ejecutar MQ - desantendido
-
-```
-sudo ./bin/activemq start
-```
-
-### Detener MQ
-
-```
-sudo ./bin/activemq stop
-```
-
-### Observar proceso que ejecuta MQ, ver puerto 61616
-
-ss -ltpn
-
-### Ejecutar MQ - modo consola
-
-```
-sudo ./bin/activemq console
-```
-
-### Monitor web MQ (admin/admin)
-
-```
-http://localhost:8161
-```
-
-### Ver log de la consola MQ, desde Web ver en Feed RSS, desde consola ejecutar:
-
-```
-cat /opt/apache-activemq-5.16.4/data/activemq.log
-```
-
-## Instalar Configurar Apache Maven
-
-### Bajar version e instalar
-
-```
-wget https://dlcdn.apache.org/maven/maven-3/3.8.5/binaries/apache-maven-3.8.5-bin.tar.gz -P /tmp
-sudo tar xf /tmp/apache-maven-\*.tar.gz -C /opt
-sudo ln -s /opt/apache-maven-3.8.5 /opt/maven
-```
-
-### Crear archivo configuracion
-
-```
-sudo nano /etc/profile.d/maven.sh
+cd Data/conf
+nano db.properties
 ```
 
 ```
-#export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_221 # ya creamos esta variable de entorno
-export M2_HOME=/opt/maven
-export MAVEN_HOME=/opt/maven
-export PATH=${M2_HOME}/bin:${PATH}
+amq.db.host=IP_LOCAL
 ```
 
-### Hacer ejecutable archivo configuracion
+_Paso 6: Configurar según IP_LOCAL, proyecto java Consumer:_
 
 ```
-sudo chmod +x /etc/profile.d/maven.sh
-
-source /etc/profile.d/maven.sh
+cd camel-consumer-a/src/main/resources
+nano application.properties
 ```
 
-### Comprobar versión Maven
+```
+spring.activemq.broker-url=tcp://IP_LOCAL:61616
+```
+
+_Paso 7: Configurar según IP_LOCAL, proyecto java Producer:_
 
 ```
-mvn -version
+cd camel-producer-a/src/main/resources
+nano application.properties
 ```
+
+```
+spring.activemq.broker-url=tcp://IP_LOCAL:61616
+spring.data.mongodb.host=IP_LOCAL
+```
+
+_Paso 8: Levantar base datos mongo/postgres, activeMQ. Verificar que se encuentra libre los puertos 27017-61616-8161-5432-5050_
+
+```
+docker-compose up -d
+```
+
+_Una vez realizado lo anterior se puede ejecutar el proyecto desde Eclipse(preferentemente)_
+
+## Ejecutando las pruebas ⚙️
+
+### Login 🔩
+
+```
+Ingreso usuario / password
+```
+
+![Alt text](./images/login.png "login")
+
+```
+Login correcto
+```
+
+![Alt text](./images/login-ok.png "login-ok")
+
+### Navegar menú ⌨️
+
+```
+Menú inicial
+```
+
+![Alt text](./images/menu.png "menu")
+
+### Elección opción ⌨️
+
+```
+Menú opción 1
+```
+
+![Alt text](./images/menu-opc1.png "menu1")
+
+```
+Menú opción 2
+```
+
+![Alt text](./images/menu-opc2.png "menu2")
+
+```
+Menú opción 3
+```
+
+![Alt text](./images/menu-opc3.png "menu3")
+
+```
+Menú opción 4
+```
+
+![Alt text](./images/menu-opc4.png "menu4")
+
+## Construido con 🛠️
+
+_Menciona las herramientas que utilizaste para crear tu proyecto_
+
+- [JAX-RS 2.1](https://repo1.maven.org/maven2/org/glassfish/jersey/bundles/jaxrs-ri/2.35/jaxrs-ri-2.35.zip) - Eclipse Jersey is a REST framework
+- [json-server](https://github.com/typicode/json-server) - Get a full fake REST API with zero coding in less than 30 seconds (seriously)
+
+## Autor ✒️
+
+- **Gustavo Chavez** - _Todas las tareas_ - [ggchavez-hotmail](https://github.com/ggchavez-hotmail/iplacex_ingenieria_informatica/tree/main/2_patrones_de_dise%C3%B1o/examen_final)
