@@ -37,10 +37,10 @@ cd Data
 _Paso 3: Levantar servicios, verificar que se encuentra libre el puerto 3000-3001-3002-3003 (ejecutar un comando por terminal, ya que la solución debe quedar corriendo)_
 
 ```
-json-server --watch db-rest-pedidos.json --port 3000
-json-server --watch db-rest-empresaA.json --port 3001
-json-server --watch db-rest-empresaB.json --port 3002
-json-server --watch db-rest-empresaC.json --port 3003
+json-server --watch db-rest-pedidos.json --port 3000 -d 100
+json-server --watch db-rest-empresaA.json --port 3001 -d 100
+json-server --watch db-rest-empresaB.json --port 3002 -d 100
+json-server --watch db-rest-empresaC.json --port 3003 -d 100
 ```
 
 _Paso 4: Configurar persistencia MQ, según IP_LOCAL (usar la ip de su maquina):_
