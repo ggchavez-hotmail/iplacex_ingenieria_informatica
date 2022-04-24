@@ -1,8 +1,8 @@
-# Evaluación 2 - Iplacex - Integración de Sistemas
+# Evaluación 3 - Iplacex - Integración de Sistemas
 
 _Se realiza 2 proyectos en Springboot Java que interactuan con cola ActiveMQ(Consumer/Producer), mediante Apache Camel._
 
-_Adicionalmente desde el Producer se consume end-point Rest donde se rescatan los pedidos a enviar a MQ, también se consume una BD en Mongo desde donde se rescatan el resto de parametros._
+_Adicionalmente desde el Producer se consume end-point Rest y una carpeta donde se rescatan los pedidos a enviar a MQ, también se consume una BD en Mongo desde donde se rescatan el resto de parametros._
 
 _El ActiveMQ esta configurado en modo de persistencia conectado a una BD Postgres._
 
