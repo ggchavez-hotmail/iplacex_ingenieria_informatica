@@ -24,7 +24,7 @@ public class ActiveMQSenderRouter extends RouteBuilder{
 		
 		//Se genera un timer para consultar end-point
 		//que devuelve los pedidos pendiente de realizar
-		from("timer:simple?period=100000")
+		from("timer:simple?period=1000")
 		.log("--- iniciar proceso ---")
 		.to("direct:consumirWSRestGET")
 		.end();

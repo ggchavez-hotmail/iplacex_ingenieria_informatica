@@ -1,0 +1,21 @@
+[{
+  "_id": "1",
+  "empresa": "adidas",
+  "infoAdicional": "info adicional adidas",
+  "_class": "com.spring.bd.mongo.model.Parametro"
+},{
+  "_id": "2",
+  "empresa": "fila",
+  "infoAdicional": "info adicional fila",
+  "_class": "com.spring.bd.mongo.model.Parametro"
+},{
+  "_id": "3",
+  "empresa": "puma",
+  "infoAdicional": "info adicional puma",
+  "_class": "com.spring.bd.mongo.model.Parametro"
+},{
+  "_id": "4",
+  "empresa": "lecofsportif",
+  "infoAdicional": "info adicional lecofsportif",
+  "_class": "com.spring.bd.mongo.model.Parametro"
+}]

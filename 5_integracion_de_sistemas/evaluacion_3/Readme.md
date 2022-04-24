@@ -88,23 +88,19 @@ _Una vez realizado lo anterior se puede ejecutar los proyectos java desde Eclips
 
 ## Ejecutando las pruebas ⚙️
 
-### Ejecución de proyecto Java - Producer 🔩
+### Api Rest donde se encuentran los pedidos de la aplicación ⌨️
 
 ![Alt text](./images/Imagen1.png "1")
 
-### Api Rest donde se encuentran los pedidos de la aplicacion ⌨️
+### Api Rest de las empresas ⌨️
 
 ![Alt text](./images/Imagen2.png "2")
 
-### Revisión de ActiMQ con los colas generadas ⌨️
-
 ![Alt text](./images/Imagen3.png "3")
-
-### Revisión de ActiMQ detalle de mensaje ⌨️
 
 ![Alt text](./images/Imagen4.png "4")
 
-### Revisión de Postgres los mensajes de ActiveMQ ⌨️
+### Datos de archivo de entrada con pedidos para la aplicación ⌨️
 
 ![Alt text](./images/Imagen5.png "5")
 
@@ -112,29 +108,75 @@ _Una vez realizado lo anterior se puede ejecutar los proyectos java desde Eclips
 
 ![Alt text](./images/Imagen6.png "6")
 
-### Ejecución de proyecto Java - Consumer 🔩
+### Ejecución de proyecto Java - Producer 🔩
 
 ![Alt text](./images/Imagen7.png "7")
 
-### Revisión de ActiMQ los mensaje fueron consumidos ⌨️
-
-![Alt text](./images/Imagen7.1.png "7.1")
-
-### Revisión de Postgres los mensaje de ActiveMQ fueron actualizados ⌨️
+### Vista log cuando consume Rest Pedidos - Producer 🔩
 
 ![Alt text](./images/Imagen8.png "8")
 
-### Api Rest de Empresa A, donde se visualiza los mensaje ingresados ⌨️
+### Revisión de Postgres los mensaje de ActiveMQ fueron insertados ⌨️
 
 ![Alt text](./images/Imagen9.png "9")
 
-### Api Rest de Empresa B, donde se visualiza los mensaje ingresados ⌨️
+### Revisión de ActiMQ con los colas generadas ⌨️
 
 ![Alt text](./images/Imagen10.png "10")
 
-### Api Rest de Empresa C, donde se visualiza los mensaje ingresados ⌨️
+### Revisión de ActiMQ detalle de mensaje ⌨️
 
 ![Alt text](./images/Imagen11.png "11")
+
+### Api Rest donde se encuentran los pedidos de la aplicación, se observa cambio de estado ⌨️
+
+![Alt text](./images/Imagen12.png "12")
+
+### Carpeta donde se va a dejar el archivo plano con pedidos ⌨️
+
+![Alt text](./images/Imagen13.png "13")
+
+### Vista log cuando consume Archivo Plano - Producer 🔩
+
+![Alt text](./images/Imagen14.png "14")
+
+### Revisión de Postgres los mensaje de ActiveMQ fueron insertados ⌨️
+
+![Alt text](./images/Imagen15.png "15")
+
+### Revisión de ActiMQ con los colas generadas ⌨️
+
+![Alt text](./images/Imagen16.png "16")
+
+### Archivo plano se mueve de carpeta ⌨️
+
+![Alt text](./images/Imagen17.png "17")
+
+### Ejecución de proyecto Java - Consumer 🔩
+
+![Alt text](./images/Imagen18.png "18")
+
+![Alt text](./images/Imagen19.png "19")
+
+### Revisión de Postgres los mensajes de ActiveMQ se eliminan ⌨️
+
+![Alt text](./images/Imagen20.png "20")
+
+### Revisión de ActiMQ los mensaje fueron consumidos ⌨️
+
+![Alt text](./images/Imagen21.png "21")
+
+### Api Rest de Empresa A, donde se visualiza los mensaje ingresados ⌨️
+
+![Alt text](./images/Imagen22.png "22")
+
+### Api Rest de Empresa B, donde se visualiza los mensaje ingresados ⌨️
+
+![Alt text](./images/Imagen23.png "23")
+
+### Api Rest de Empresa C, donde se visualiza los mensaje ingresados ⌨️
+
+![Alt text](./images/Imagen24.png "24")
 
 ## Construido con 🛠️
 
