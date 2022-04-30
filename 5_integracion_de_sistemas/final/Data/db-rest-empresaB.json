@@ -1,0 +1,22 @@
+{
+  "empresaB": [
+    {
+      "id": "Z0001",
+      "rutEmp": "96836390",
+      "fecEmp": "2022-04-29",
+      "moneda": "CLP",
+      "monto": 1000000,
+      "tipoIndicador": "Total activos circulantes",
+      "procesado": false
+    },
+    {
+      "id": "Z0002",
+      "rutEmp": "96836390",
+      "fecEmp": "2022-04-29",
+      "moneda": "CLP",
+      "monto": 1200000,
+      "tipoIndicador": "Total activos fijos",
+      "procesado": false
+    }
+  ]
+}

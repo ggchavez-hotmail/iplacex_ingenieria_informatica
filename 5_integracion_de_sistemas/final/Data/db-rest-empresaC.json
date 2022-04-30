@@ -1,0 +1,22 @@
+{
+  "empresaC": [
+    {
+      "id": "X0001",
+      "rutSDV": "99557450",
+      "fec": "2022-04-29",
+      "mon": "CLP",
+      "mto": 1000000,
+      "tipInd": "Total activos circulantes",
+      "procesado": false
+    },
+    {
+      "id": "X0002",
+      "rutSDV": "99557450",
+      "fec": "2022-04-29",
+      "mon": "CLP",
+      "mto": 1200000,
+      "tipInd": "Total activos fijos",
+      "procesado": false
+    }
+  ]
+}

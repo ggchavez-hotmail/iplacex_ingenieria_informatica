@@ -1,0 +1,61 @@
+[{
+  "_id": "1",
+  "rut": "76937350",
+  "nombre": "AUSTRAL CAPITAL PARTNERS SA",
+  "vigente": false,
+  "_class": "com.spring.bd.mongo.model.Parametro"
+},{
+  "_id": "2",
+  "rut": "96767630",
+  "nombre": "BANCHILE ADMINISTRADORA GENERAL DE FONDOS SA",
+  "vigente": true,
+  "_class": "com.spring.bd.mongo.model.Parametro"
+},{
+  "_id": "3",
+  "rut": "96836390",
+  "nombre": "BANCOESTADO SA ADMINISTRADORA GENERAL DE FONDOS",
+  "vigente": true,
+  "_class": "com.spring.bd.mongo.model.Parametro"
+},{
+  "_id": "4",
+  "rut": "96530900",
+  "nombre": "BCI ASSET MANAGEMENT ADMINISTRADORA GENERAL DE FONDOS",
+  "vigente": true,
+  "_class": "com.spring.bd.mongo.model.Parametro"
+},{
+  "_id": "5",
+  "rut": "96514410",
+  "nombre": "BICE INVERSIONES ADMINISTRADORA GENERAL DE FONDOS",
+  "vigente": true,
+  "_class": "com.spring.bd.mongo.model.Parametro"
+},{
+  "_id": "6",
+  "rut": "99557450",
+  "nombre": "BUSES GRAN SANTIAGO SA",
+  "vigente": true,
+  "_class": "com.spring.bd.mongo.model.Parametro"
+},{
+  "_id": "7",
+  "rut": "99557440",
+  "nombre": "BUSES METROPOLITANA SA",
+  "vigente": true,
+  "_class": "com.spring.bd.mongo.model.Parametro"
+},{
+  "_id": "8",
+  "rut": "76071048",
+  "nombre": "BUSES VULE SA",
+  "vigente": false,
+  "_class": "com.spring.bd.mongo.model.Parametro"
+},{
+  "_id": "9",
+  "rut": "76293740",
+  "nombre": "CASINO DE JUEGO DE TALCA SA",
+  "vigente": true,
+  "_class": "com.spring.bd.mongo.model.Parametro"
+},{
+  "_id": "10",
+  "rut": "99533410",
+  "nombre": "CFC CAPITAL SA",
+  "vigente": true,
+  "_class": "com.spring.bd.mongo.model.Parametro"
+}]

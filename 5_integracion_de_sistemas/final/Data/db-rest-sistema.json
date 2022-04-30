@@ -1,0 +1,14 @@
+{
+  "sistema": [
+    {
+      "empresaRut": 1356,
+      "empresaNombre": "Prueba",
+      "fechaInforme": "2022-04-20",
+      "moneda": "CLP",
+      "tipoIndicador": "Balance",
+      "monto": 9898,
+      "canal": "Web",
+      "id": 1
+    }
+  ]
+}

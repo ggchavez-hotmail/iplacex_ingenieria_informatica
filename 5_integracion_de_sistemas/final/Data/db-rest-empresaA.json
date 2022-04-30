@@ -1,0 +1,22 @@
+{
+  "empresaA": [
+    {
+      "id": "N0001",
+      "rut": "96767630",
+      "fecha": "2022-04-29",
+      "moneda": "CLP",
+      "monto": 1000000,
+      "tipoIndicador": "Total activos circulantes",
+      "informeProcesado": false
+    },
+    {
+      "id": "N0002",
+      "rut": "96767630",
+      "fecha": "2022-04-29",
+      "moneda": "CLP",
+      "monto": 1200000,
+      "tipoIndicador": "Total activos fijos",
+      "informeProcesado": false
+    }
+  ]
+}
